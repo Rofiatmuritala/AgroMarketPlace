@@ -8,6 +8,8 @@ function HomePage() {
       <>
         {/* <NavbarComponent /> */}
         <HeroComponent />
+        <AboutComponent/>
+
       </>
     </div>
   );

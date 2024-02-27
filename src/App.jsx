@@ -19,9 +19,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           {/* If someone clicks on the products, it will show the Products Page */}
           {/* <Route path="/products" element={<ProductsPage />} /> */}
-          {/* <Route path="/login" element={<LoginPage />} /> */}
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
-          {/* <Route path="/dashboard" element={<DashboardPage />} /> */}
+          <Route path="/dashboard" element={<DashboardPage />} />
         </Routes>
       </BrowserRouter>
     </>
