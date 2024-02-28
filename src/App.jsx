@@ -5,7 +5,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import RegisterPage from "./pages/RegisterPage";
 import { ToastContainer } from "react-toastify";
+import LoginPage from "./pages/LoginPage";
 import "react-toastify/dist/ReactToastify.css";
+import DashboardPage from "./pages/DashboardPage";
 
 function App() {
   return (
