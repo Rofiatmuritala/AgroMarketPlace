@@ -23,7 +23,7 @@ export const productItems = [
           },
           {
             id: 4,
-            name: "CropDefender Insect Granules",
+            name: "CropDefender Granules",
             image_url: "./src/assets/pic3.jpg",
             price: 18.79,
             description: "Granule form insecticide for protecting crops in large areas.",
@@ -66,7 +66,7 @@ export const productItems = [
           },
           {
             id: 10,
-            name: "CropDefender Insect Granules",
+            name: "CropDefender Granules",
             image_url: "./src/assets/pic3.jpg",
             price: 18.79,
             description: "Granule form insecticide for protecting crops in large areas.",
@@ -108,7 +108,7 @@ export const productItems = [
           },
           {
             id: 16,
-            name: "CropDefender Insect Granules",
+            name: "CropDefender Granules",
             image_url: "./src/assets/pic3.jpg",
             price: 18.79,
             description: "Granule form insecticide for protecting crops in large areas.",
