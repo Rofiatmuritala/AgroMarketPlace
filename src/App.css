@@ -13,7 +13,51 @@
     line-height: 22px;
     text-align: center;
   }
+  .Team-types{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding:0 120px;
+  gap: 20px;
+  background-color: #023808;
+  border-radius: 10px;
+  padding: 50px;
+  color: white;
+  }
+  .Team-Names h4{
+    margin-top: 10px;
+  }
+  .Team{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+    
+  }
   
+  .Team h2{
+     color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 71, 0);
+    border-radius: 14px;
+    color: white;
+  
+  }
+  .Team-Names img{
+    height: 50%;
+     width: 90%; 
+     border-radius: 50px;
+  }
+  .Team-Names h4{
+    text-align: center;
+    margin-bottom: 50px;
+  
+  }
   .about-text h3 {
     padding: 12px;
     font-size: 18px;

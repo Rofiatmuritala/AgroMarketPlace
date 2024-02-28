@@ -1,6 +1,7 @@
 import React from "react";
 import FooterComponent from "../components/FooterComponent";
 import AboutComponent from "../components/AboutComponent";
+import TeamComponent from "../components/TeamComponent";
 
 
 function AboutPage () {
@@ -8,6 +9,8 @@ function AboutPage () {
         <div>
             <>
             <AboutComponent/>
+            <TestimonialComponent />
+            <TeamComponent />
             <FooterComponent/>
             </>
         </div>
