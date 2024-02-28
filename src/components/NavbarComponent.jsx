@@ -7,7 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function NavbarComponent() {
   return (
-    <Navbar className="" expand="lg" bg="success" data-bs-theme="dark">
+    <Navbar className="" expand="lg" bg="success" data-bs-theme="dark" >
       <Container fluid>
         <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -42,10 +42,14 @@ function NavbarComponent() {
             />
             <Button variant="outline-success">Search</Button>
           </Form>
+          <Nav.Link href="#action2">Add to Cart</Nav.Link>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
+
+   
+);
 }
 
 export default NavbarComponent;
