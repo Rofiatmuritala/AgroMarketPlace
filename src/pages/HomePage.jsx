@@ -1,6 +1,6 @@
 import React from "react";
-import NavbarComponent from "../components/NavbarComponent";
 import HeroComponent from "../components/HeroComponent";
+// import AboutComponent from "../components/AboutComponent";
 
 function HomePage() {
   return (
@@ -8,7 +8,8 @@ function HomePage() {
       <>
         {/* <NavbarComponent /> */}
         <HeroComponent />
-        <AboutComponent/>
+        {/* <AboutComponent/> */}
+
 
       </>
     </div>

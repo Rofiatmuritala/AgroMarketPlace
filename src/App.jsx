@@ -6,6 +6,8 @@ import HomePage from "./pages/HomePage";
 import RegisterPage from "./pages/RegisterPage";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LoginPage from "./pages/LoginPage";
+import DashboardPage from "./pages/DashboardPage";
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           {/* If someone clicks on the products, it will show the Products Page */}
           {/* <Route path="/products" element={<ProductsPage />} /> */}
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage/>} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
         </Routes>
