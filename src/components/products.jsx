@@ -5,7 +5,7 @@ export default function Products() {
     return (
         <div>
             <section className="products-section">
-                <div>
+                <div className="products-section-title">
                     <h2>All Products</h2>
                 </div>
                 <div className="product-items">
