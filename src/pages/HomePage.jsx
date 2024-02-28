@@ -9,8 +9,11 @@ function HomePage() {
         {/* <NavbarComponent /> */}
         <HeroComponent />
         {/* <AboutComponent/> */}
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> da5893765b3aaad13d3133a115ae0f4501ae41d9
       </>
     </div>
   );
