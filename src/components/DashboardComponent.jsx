@@ -1,6 +1,5 @@
 import React from 'react'
-import { Button, Modal } from 'react-bootstrap'
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Button, Container, Form, Modal } from "react-bootstrap";
 
 function DashboardComponent() {
