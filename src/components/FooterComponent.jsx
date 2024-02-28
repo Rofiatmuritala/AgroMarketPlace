@@ -101,7 +101,7 @@ function FooterComponent() {
             
         </div>
         <div class="footer-bottom">
-            <p>Copyright &copy;2022 Designed by <span class="designer">Leaf and Petals</span></p>
+            <p>Copyright &copy;2022 Designed by <span class="designer">Ruby Agromarket</span></p>
         </div>
     
     
