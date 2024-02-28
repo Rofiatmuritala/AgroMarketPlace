@@ -18,19 +18,19 @@ function NavbarComponent() {
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+            <Nav.Link href="#action2">About Us</Nav.Link>
+            <NavDropdown title="Become a seller" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Create and account</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
-                Another action
+                Seller's Dashboard
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
-                Something else here
+                Log out
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
+            <Nav.Link href="#">
+              Account
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
