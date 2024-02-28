@@ -1,6 +1,8 @@
 import React from "react";
 import HeroComponent from "../components/HeroComponent";
 // import AboutComponent from "../components/AboutComponent";
+import AboutComponent from "../components/AboutComponent";
+import FooterComponent from "../components/FooterComponent";
 
 function HomePage() {
   return (
@@ -8,12 +10,13 @@ function HomePage() {
       <>
         {/* <NavbarComponent /> */}
         <HeroComponent />
+
         {/* <AboutComponent/> */}
-<<<<<<< HEAD
 
 
-=======
->>>>>>> da5893765b3aaad13d3133a115ae0f4501ae41d9
+        <AboutComponent />
+        <FooterComponent />
+
       </>
     </div>
   );
