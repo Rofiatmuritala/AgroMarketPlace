@@ -1,6 +1,6 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
-import Image1 from "../assets/roman-grachev-eygJ8wxgfng-unsplash.jpg";
+import { Carousel, Container } from "react-bootstrap";
+import Image1 from "../assets/Tropical Green Drink Banner Landscape.png";
 import Image2 from "../assets/sandy-millar-SmK8is9viYo-unsplash.jpg";
 import Image3 from "../assets/shad-arefin-sanchoy-AbIiPjvu5z0-unsplash.jpg";
 
@@ -9,10 +9,12 @@ function HeroComponent() {
     <Carousel fade>
       <Carousel.Item>
         <img src={Image1} alt="" height={500} width={"100%"} srcset="" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+        <Container sx={{ width: "100%", height: "100%" }}>
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Container>
       </Carousel.Item>
       <Carousel.Item>
         <img src={Image2} alt="" height={500} width={"100%"} srcset="" />

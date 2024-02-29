@@ -3,7 +3,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/esm/Container";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 
 function LoginComponent() {
@@ -84,6 +84,9 @@ function LoginComponent() {
           Login
         </Button>
       </Form>
+      <p>
+        Don't have an account? <Link to={"/register"}>Register</Link>
+      </p>
     </Container>
   );
 }
