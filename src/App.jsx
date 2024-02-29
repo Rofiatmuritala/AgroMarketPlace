@@ -12,7 +12,6 @@ import ProductsPage from "./pages/products-page";
 import DashboardPage from "./pages/DashboardPage";
 
 import AboutPage from "./pages/AboutPage";
-import FooterComponent from "./components/FooterComponent";
 
 
 function App() {
