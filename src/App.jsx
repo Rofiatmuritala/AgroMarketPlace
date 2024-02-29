@@ -9,7 +9,6 @@ import LoginPage from "./pages/LoginPage";
 import "react-toastify/dist/ReactToastify.css";
 import ProductsPage from "./pages/products-page";
 
-import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 
 import AboutPage from "./pages/AboutPage";
