@@ -1,6 +1,11 @@
 function TestimonialComponent() {
     return(
         <>
+        <section className= "Testimonial-section">
+           {/* <div className= "testimonial-section-title"> */}
+           <h2>What Our Customers Say</h2>
+            {/* </div>  */}
+            
         <div>
         <figure class="snip1533">
   <figcaption>
@@ -30,6 +35,8 @@ function TestimonialComponent() {
   </figcaption>
 </figure>
         </div>
+        </section>
+            
         
 </>
     );

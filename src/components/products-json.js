@@ -1,4 +1,37 @@
 
+export const landingProductItems = [
+  {
+    id: 1,
+    name: "GardenGuard Insect Killer",
+    image_url: "./src/assets/pic3.jpg",
+    price: 12.99,
+    description: "Effective insect killer for protecting your garden plants.",
+  },
+  {
+    id: 2,
+    name: "BugBuster Organic Spray",
+    image_url: "./src/assets/pic4.jpg",
+    price: 15.49,
+    description: "Organic insect spray to keep bugs away from your crops.",
+  },
+  {
+    id: 3,
+    name: "MosquitoShield Repellent",
+    image_url: "./src/assets/pic5.jpg",
+    price: 8.99,
+    description: "Powerful mosquito repellent for indoor and outdoor use.",
+  },
+  {
+    id: 4,
+    name: "CropDefender Granules",
+    image_url: "./src/assets/pic3.jpg",
+    price: 18.79,
+    description: "Granule form insecticide for protecting crops in large areas.",
+  },
+];
+
+
+
 export const productItems = [
         {
             id: 1,

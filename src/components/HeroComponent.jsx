@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import Image1 from "../assets/roman-grachev-eygJ8wxgfng-unsplash.jpg";
+import Image1 from "../assets/WhatsApp Image 2024-02-28 at 5.58.44 PM.jpeg";
 import Image2 from "../assets/sandy-millar-SmK8is9viYo-unsplash.jpg";
 import Image3 from "../assets/shad-arefin-sanchoy-AbIiPjvu5z0-unsplash.jpg";
 

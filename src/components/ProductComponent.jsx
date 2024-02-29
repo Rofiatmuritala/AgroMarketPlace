@@ -1,5 +1,6 @@
 import React from "react";
 import { productItems } from "./products-json.js";
+import { landingProductItems } from "./products-json.js";
 
 function ProductComponent() {
     return (
@@ -10,7 +11,7 @@ function ProductComponent() {
                     </div>
                     <div className="product-items">
 
-                        {productItems.map((product) => (
+                        {landingProductItems.map((product) => (
                             <div key={product.id} >
                                 <div className="product-card">
                                     {/* add width of 100% to images */}

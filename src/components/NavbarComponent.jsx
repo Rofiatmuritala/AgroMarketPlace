@@ -40,7 +40,7 @@ function NavbarComponent() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-dark">Search</Button>
           </Form>
           <Nav.Link href="#action2">Add to Cart</Nav.Link>
 
