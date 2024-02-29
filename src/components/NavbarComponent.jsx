@@ -32,7 +32,7 @@ function NavbarComponent() {
             <Nav.Link as={Link} to="/products">
               Products
             </Nav.Link>
-            <Nav.Link href="#action2">About Us</Nav.Link>
+            <Nav.Link  as={Link} to="/about">About Us</Nav.Link>
             <NavDropdown title="Become a seller" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="/register" className="nav-link-black">
                 Create an account

@@ -324,19 +324,20 @@ hr{
 } */
 .Team-types {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 17px;
+grid-row-gap: 0px;
   padding: 0 120px;
-  gap: 20px;
-  background-color: #023808;
+  gap: 0px;
+  background-color: #28211C;
   border-radius: 10px;
   /* padding: 50px; */
   color: white;
+  margin: 20px;
 }
 .Team-Names {
-  width: 100%;
+  width: 120%;
 }
 .Team-Names h4 {
   margin-top: 10px;
@@ -354,13 +355,13 @@ hr{
   margin-bottom: 30px;
   text-align: center;
   padding: 20px;
-  background-color: rgb(0, 71, 0);
+  background-color: #28211C;
   border-radius: 14px;
   color: white;
 }
 .Team-Names img {
   height: 50%;
-  width: 90%;
+  width: 60%;
   border-radius: 50px;
 }
 .Team-Names h4 {
@@ -368,7 +369,7 @@ hr{
   margin-bottom: 50px;
 }
 .footer {
-  background-color: rgb(17, 66, 4);
+  background-color:#28211C;
 }
 .footer-container {
   width: 100%;
@@ -420,7 +421,7 @@ hr{
   opacity: 1;
 }
 .footer-bottom {
-  background-color: #023808;
+  background-color: #28211C;
   padding: 20px;
   text-align: center;
 }
@@ -453,7 +454,10 @@ hr{
   width: 100%;
   background-color: #ffffff;
   border-radius: 5px;
-  border-top: 5px solid #d2652d;
+  border-top: 5px solid #28211C;
+  margin: auto;
+  justify-content: center;
+  margin-right: 20px;
 }
 
 .snip1533 *,
