@@ -3,6 +3,7 @@ import HeroComponent from "../components/HeroComponent";
 // import AboutComponent from "../components/AboutComponent";
 import AboutComponent from "../components/AboutComponent";
 import FooterComponent from "../components/FooterComponent";
+import ProductComponent from "../components/ProductComponent";
 
 function HomePage() {
   return (
@@ -15,6 +16,7 @@ function HomePage() {
 
 
         <AboutComponent />
+        <ProductComponent />
         <FooterComponent />
 
       </>
