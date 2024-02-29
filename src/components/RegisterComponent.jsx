@@ -55,10 +55,10 @@ function RegisterComponent() {
   };
 
   return (
-    <Container>
-      <h3 className="mb-4 text-primary text-center">Register As A Seller </h3>
+    <Container >
+      <h3  className="mb-4 text-primary text-center">Register As A Seller </h3>
       <Form onSubmit={registerSellerSubmitHandler}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group  className="mb-3" controlId="formBasicEmail">
           <Form.Label>Full Name</Form.Label>
           {/* saying that what the seller is typing should be saved as fullname */}
           <Form.Control

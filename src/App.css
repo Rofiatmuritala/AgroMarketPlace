@@ -475,10 +475,11 @@ body {
 /* Navbar cart */
 .cart {
   display: flex;
+  padding-left: -50px;
 }
 
 .cart-icon {
-  color: #ffffff;
+  color: black;
   font-size: 2rem;
 }
 
@@ -489,3 +490,27 @@ body {
   border-radius: 100%;
   margin-bottom: 1rem;
 }
+
+
+/* navbar css starts here */
+.head {
+  color: black ;
+  background-color: grey;
+  display: flex;
+  text-align: center;
+}
+
+.head, Nav {
+  text-align: center;
+  display: flex;
+}
+
+nav.link{
+  text-align: center;
+  display: flex;
+}
+
+#topitems{
+  color: #000;
+}
+/* navbar css ends here */

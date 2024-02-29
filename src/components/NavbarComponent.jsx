@@ -8,24 +8,25 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { PiShoppingCartFill } from "react-icons/pi";
 import { CartContext } from "../contexts/CartContextProvider";
 import { Link } from "react-router-dom";
+import logo from "../assets/Hero pics/GREcyio_LIGHT__1_-removebg-preview.png"
 
 function NavbarComponent() {
   const { cartItems } = useContext(CartContext);
 
   return (
-    <Navbar className="" expand="lg" bg="success" data-bs-theme="dark">
-      <Container fluid>
+    <Navbar className="head" expand="lg" bg="" data-bs-theme="dark" color="dark">
+      <Container fluid className="head" >
         <Navbar.Brand as={Link} to="/">
-          <img src="./src/assets/pic4.jpg" width={50} height={50} />
+          <img src={logo} width={150} height={100} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse id="navbarScroll"  >
           <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
+            className="me-auto my-2 my-lg-0 " id="topitems" data-bs-theme="dark" 
+            style={{ maxHeight: "100px", textAlign:"center", display: "flex" }}
             navbarScroll
           >
-            <Nav.Link as={Link} to="/">
+            <Nav.Link  as={Link} to="/" style={{ fontSize: "18px", color: "#ffffff" }}>
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/products">
@@ -33,7 +34,7 @@ function NavbarComponent() {
             </Nav.Link>
             <Nav.Link href="#action2">About Us</Nav.Link>
             <NavDropdown title="Become a seller" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to="/register">
+              <NavDropdown.Item as={Link} to="/register" className="nav-link-black">
                 Create an account
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/dashboard">
