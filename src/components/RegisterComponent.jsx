@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 function RegisterComponent() {
@@ -98,6 +98,10 @@ function RegisterComponent() {
           Register
         </Button>
       </Form>
+
+      <p>
+        Already have an account? <Link to={"/login"}>Login</Link>
+      </p>
     </Container>
   );
 }
