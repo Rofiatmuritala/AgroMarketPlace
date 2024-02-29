@@ -74,7 +74,16 @@
     padding-top: 70px;
     padding-bottom: 50px;
   }
-  
+  .aboutSection_text h2{
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(25, 135, 84);
+    border-radius: 14px;
+    color: white;
+    width: 90%;
+  }
   .about-text {
     min-height: 1px;
     padding-right: 15px;
@@ -88,6 +97,7 @@
     margin: auto;
     width: 75%;
   }
+  /* testimonial css */
   .Testimonial-section h2{
     color: white;
     margin-top: 30px;
