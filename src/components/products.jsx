@@ -32,7 +32,6 @@ export default function Products() {
                         <h2>Our Products</h2>
                     </div>
                     <div className="products-section-buttons">
-                      
                         <Button className="filterButton btn-dark" onClick={() => filterItems('a')}>All</Button>
                         <Button className="filterButton btn-dark" onClick={() => filterItems('d')}>Dora</Button>
                         <Button className="filterButton btn-dark" onClick={() => filterItems('m')}>Michael</Button>
