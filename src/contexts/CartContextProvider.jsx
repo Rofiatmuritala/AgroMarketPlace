@@ -46,6 +46,14 @@ const CartContextProvider = ({ children }) => {
     }
   };
 
+  const removeCompletelyFromCart = (item) => {
+    const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
+
+    if (isItemInCart) {
+      setCartItems(cartItems.filter((cartItem) => cartItem.id !== item.id));
+    }
+  };
+
   const clearCart = () => {
     setCartItems([]); // set the cart items to an empty array
   };
@@ -55,6 +63,12 @@ const CartContextProvider = ({ children }) => {
       (total, item) => total + item.price * item.quantity,
       0
     ); // calculate the total price of the items in the cart
+  };
+
+  const itemExistInCart = (productId) => {
+    const existInCart = cartItems.some((item) => item.id === productId);
+
+    return existInCart;
   };
 
   useEffect(() => {
@@ -70,7 +84,15 @@ const CartContextProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cartItems, addToCart, removeFromCart, clearCart, getCartTotal }}
+      value={{
+        cartItems,
+        addToCart,
+        removeFromCart,
+        clearCart,
+        getCartTotal,
+        itemExistInCart,
+        removeCompletelyFromCart,
+      }}
     >
       {children}
     </CartContext.Provider>

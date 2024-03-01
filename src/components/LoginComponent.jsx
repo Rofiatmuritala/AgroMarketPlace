@@ -55,39 +55,72 @@ function LoginComponent() {
   };
 
   return (
-    <Container>
-      <ToastContainer />
-      <h3>Login to your account</h3>
-      <Form onSubmit={loginSellerSubmitHandler}>
-        <Form.Group className="mb-3">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control
-            type="email"
-            placeholder="Enter email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
+    <>
+      <div className="grid grid-cols-2 lg:grid-cols-2">
+        <div className="bg-auth hidden lg:block">
+          <div className="flex justify-center h-full text-white">
+            <div className="mt-20 mx-auto w-4/5">
+              <h1 className="font-bold text-2xl lg:text-4xl text-orange-400 my-10 capitalize">
+                Sign up as a seller today!
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Cupiditate laborum, exercitationem iusto earum nulla eveniet
+                maiores sequi at quo, hic nobis rerum rem esse libero vitae?
+                Vero reiciendis odio
+              </p>
+            </div>
+            sunt?
+          </div>
+        </div>
 
-        <Form.Group className="mb-3">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </Form.Group>
+        <div className="lg:flex justify-center items-center block">
+          <div className="mx-auto lg:w-4/5">
+            <h3 className="mb-4 text-center font-bold text-2xl text-orange-400">
+              Login to your account
+            </h3>
+            <Form onSubmit={loginSellerSubmitHandler}>
+              <Form.Group className="mb-3">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="Enter email"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <Form.Text className="text-muted">
+                  We'll never share your email with anyone else.
+                </Form.Text>
+              </Form.Group>
 
-        <Button variant="success" type="submit">
-          Login
-        </Button>
-      </Form>
-      <p>
-        Don't have an account? <Link to={"/register"}>Register</Link>
-      </p>
-    </Container>
+              <Form.Group className="mb-3">
+                <Form.Label>Password</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </Form.Group>
+
+              <button
+                type="submit"
+                className="bg-orange-400 text-white px-3 py-2 rounded-lg hover:bg-orange-300"
+              >
+                Login
+              </button>
+            </Form>
+            <p className="mt-3">
+              Don't have an account?{" "}
+              <Link
+                to={"/register"}
+                className="text-orange-400 hover:text-orange-800"
+              >
+                Register
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 

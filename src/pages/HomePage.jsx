@@ -1,24 +1,17 @@
 import React from "react";
 import HeroComponent from "../components/HeroComponent";
-// import AboutComponent from "../components/AboutComponent";
 import AboutComponent from "../components/AboutComponent";
-import FooterComponent from "../components/FooterComponent";
+import ProductsComponent from "../components/ProductsComponent";
 
 function HomePage() {
   return (
-    <div>
-      <>
-        {/* <NavbarComponent /> */}
-        <HeroComponent />
-
-        {/* <AboutComponent/> */}
-
-
-        <AboutComponent />
-        <FooterComponent />
-
-      </>
-    </div>
+    <>
+      <HeroComponent />
+      <AboutComponent />
+      <div className="py-10">
+        <ProductsComponent />
+      </div>
+    </>
   );
 }
 

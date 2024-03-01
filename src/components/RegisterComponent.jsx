@@ -55,54 +55,87 @@ function RegisterComponent() {
   };
 
   return (
-    <Container >
-      <h3  className="mb-4 text-primary text-center">Register As A Seller </h3>
-      <Form onSubmit={registerSellerSubmitHandler}>
-        <Form.Group  className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Full Name</Form.Label>
-          {/* saying that what the seller is typing should be saved as fullname */}
-          <Form.Control
-            type="text"
-            placeholder="Team Ruby"
-            onChange={(e) => setFullName(e.target.value)}
-            required
-          />
-        </Form.Group>
+    <>
+      <div className="grid grid-cols-2">
+        <div className="bg-auth">
+          <div className="flex justify-center h-full text-white">
+            <div className="mt-20 mx-auto w-4/5">
+              <h1 className="font-bold text-2xl lg:text-4xl text-orange-400 my-10 capitalize">
+                Sign up as a seller today!
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Cupiditate laborum, exercitationem iusto earum nulla eveniet
+                maiores sequi at quo, hic nobis rerum rem esse libero vitae?
+                Vero reiciendis odio
+              </p>
+            </div>
+            sunt?
+          </div>
+        </div>
 
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control
-            type="email"
-            placeholder="Enter email"
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
+        <div className="flex justify-center items-center">
+          <div className="mx-auto w-4/5">
+            <h3 className="mb-4 text-center font-bold text-2xl text-orange-400">
+              Register As A Seller
+            </h3>
+            <Form onSubmit={registerSellerSubmitHandler}>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Full Name</Form.Label>
+                {/* saying that what the seller is typing should be saved as fullname */}
+                <Form.Control
+                  type="text"
+                  placeholder="Team Ruby"
+                  onChange={(e) => setFullName(e.target.value)}
+                  required
+                />
+              </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Password"
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-        <Button variant="primary" type="submit">
-          Register
-        </Button>
-      </Form>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="Enter email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <Form.Text className="text-muted">
+                  We'll never share your email with anyone else.
+                </Form.Text>
+              </Form.Group>
 
-      <p>
-        Already have an account? <Link to={"/login"}>Login</Link>
-      </p>
-    </Container>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                <Form.Check type="checkbox" label="Check me out" />
+              </Form.Group>
+              <button
+                type="submit"
+                className="bg-orange-400 text-white px-3 py-2 rounded-lg hover:bg-orange-300"
+              >
+                Register
+              </button>
+            </Form>
+            <p className="mt-3">
+              Already have an account?{" "}
+              <Link
+                to={"/login"}
+                className="text-orange-400 hover:text-orange-800"
+              >
+                Login
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 

@@ -1,38 +1,25 @@
 import React from "react";
-import { Carousel, Container } from "react-bootstrap";
-import Image1 from "../assets/Tropical Green Drink Banner Landscape.png";
-import Image2 from "../assets/sandy-millar-SmK8is9viYo-unsplash.jpg";
-import Image3 from "../assets/shad-arefin-sanchoy-AbIiPjvu5z0-unsplash.jpg";
+import { Link } from "react-router-dom";
 
 function HeroComponent() {
   return (
-    <Carousel fade>
-      <Carousel.Item>
-        <img src={Image1} alt="" height={500} width={"100%"} srcset="" />
-        <Container sx={{ width: "100%", height: "100%" }}>
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Container>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src={Image2} alt="" height={500} width={"100%"} srcset="" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src={Image3} alt="" height={500} width={"100%"} srcset="" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <div className="hero">
+      <div className="flex justify-center items-center h-full">
+        <div className="mx-auto w-4/5 lg:w-2/3">
+          <h1 className="text-3xl lg:text-5xl text-white text-center font-bold mb-10">
+            Your #1 stop shop for all orgainic fertilizers
+          </h1>
+          <div className="flex justify-center">
+            <Link
+              to={"/products"}
+              className="bg-orange-600 py-3 px-5 rounded-md shadow-md text-white"
+            >
+              Shop Now
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

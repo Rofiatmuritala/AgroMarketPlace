@@ -491,26 +491,79 @@ body {
   margin-bottom: 1rem;
 }
 
-
 /* navbar css starts here */
 .head {
-  color: black ;
+  color: black;
   background-color: grey;
   display: flex;
   text-align: center;
 }
 
-.head, Nav {
+.head,
+Nav {
   text-align: center;
   display: flex;
 }
 
-nav.link{
+nav.link {
   text-align: center;
   display: flex;
 }
 
-#topitems{
+#topitems {
   color: #000;
 }
 /* navbar css ends here */
+
+/* review starts here */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+.review {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.review .customer {
+  font-weight: bold;
+  color: #555;
+}
+
+.review .date {
+  font-style: italic;
+  color: #888;
+}
+
+.review .content {
+  margin-top: 10px;
+}
+
+.review .rating {
+  margin-top: 10px;
+}
+
+.review .rating span {
+  color: #ff9800; /* Star color */
+}
+
+/* review ends here */

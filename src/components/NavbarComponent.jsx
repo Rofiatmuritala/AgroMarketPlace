@@ -8,33 +8,51 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { PiShoppingCartFill } from "react-icons/pi";
 import { CartContext } from "../contexts/CartContextProvider";
 import { Link } from "react-router-dom";
-import logo from "../assets/Hero pics/GREcyio_LIGHT__1_-removebg-preview.png"
+import logo from "../assets/Hero pics/GREcyio_LIGHT__1_-removebg-preview.png";
 
 function NavbarComponent() {
   const { cartItems } = useContext(CartContext);
 
   return (
-    <Navbar className="head" expand="lg" bg="" data-bs-theme="dark" color="dark">
-      <Container fluid className="head" >
+    <Navbar
+      className="head"
+      expand="lg"
+      bg=""
+      data-bs-theme="dark"
+      color="dark"
+    >
+      <Container fluid className="head">
         <Navbar.Brand as={Link} to="/">
-          <img src={logo} width={150} height={100} />
+          <img src={logo} width={100} height={100} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll"  >
+        <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0 " id="topitems" data-bs-theme="dark" 
-            style={{ maxHeight: "100px", textAlign:"center", display: "flex" }}
+            className="me-auto my-2 my-lg-0 "
+            id="topitems"
+            data-bs-theme="dark"
+            style={{ maxHeight: "100px", textAlign: "center", display: "flex" }}
             navbarScroll
           >
-            <Nav.Link  as={Link} to="/" style={{ fontSize: "18px", color: "#ffffff" }}>
+            <Nav.Link
+              as={Link}
+              to="/"
+              style={{ fontSize: "18px", color: "#ffffff" }}
+            >
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/products">
               Products
             </Nav.Link>
-            <Nav.Link href="#action2">About Us</Nav.Link>
+            <Nav.Link as={Link} to="/about">
+              About Us
+            </Nav.Link>
             <NavDropdown title="Become a seller" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to="/register" className="nav-link-black">
+              <NavDropdown.Item
+                as={Link}
+                to="/register"
+                className="nav-link-black"
+              >
                 Create an account
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/dashboard">
@@ -45,15 +63,17 @@ function NavbarComponent() {
             </NavDropdown>
             <Nav.Link href="#">Account</Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          {/* <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Search"
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+            <Button as={Link} to="/search" variant="outline-success">
+              Search
+            </Button>
+          </Form> */}
           <Nav.Link as={Link} to="/cart">
             <div className="cart">
               <PiShoppingCartFill className="cart-icon" />
