@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
-import { ProductContext } from "../contexts/ProductContextProvider";
+import { ProductContext } from "../../../contexts/ProductContextProvider";
 import { toast } from "react-toastify";
 import { v4 as uuidv4 } from "uuid";
 
-const DashboardAddProductComponent = () => {
+const AddProductDashboardComponent = () => {
   // This is coming from the addProduct Context
   const { addProduct } = useContext(ProductContext);
 
@@ -51,9 +51,12 @@ const DashboardAddProductComponent = () => {
     <>
       {/* Add product Modal */}
       {/* This is the button to click and open the modal */}
-      <Button variant="primary" onClick={handleShowAddProduct}>
+      <button
+        className="bg-orange-600 px-3 py-2 rounded-lg text-white"
+        onClick={handleShowAddProduct}
+      >
         Add Product
-      </Button>
+      </button>
       {/* This is the add product modal */}
       <Modal show={showAddProductModal} onHide={handleCloseAddProduct}>
         <Modal.Header closeButton>
@@ -105,9 +108,12 @@ const DashboardAddProductComponent = () => {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <button
+              className="bg-orange-600 px-3 py-2 rounded-lg text-white"
+              type="submit"
+            >
               Save Product
-            </Button>
+            </button>
           </Form>
         </Modal.Body>
       </Modal>
@@ -115,4 +121,4 @@ const DashboardAddProductComponent = () => {
   );
 };
 
-export default DashboardAddProductComponent;
+export default AddProductDashboardComponent;

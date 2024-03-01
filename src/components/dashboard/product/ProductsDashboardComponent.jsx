@@ -1,13 +1,19 @@
 import { useContext } from "react";
-import { ProductContext } from "../contexts/ProductContextProvider";
+import { ProductContext } from "../../../contexts/ProductContextProvider";
 import { Table } from "react-bootstrap";
+import EditProductDashboardComponent from "./EditProductDashboardComponent";
+import DeleteProductDashboardComponent from "./DeleteProductDashboardComponent";
 
-const DashboardProductsComponent = () => {
-  const { products } = useContext(ProductContext);
+const ProductsDashboardComponent = () => {
+  const { sellerProducts } = useContext(ProductContext);
+
+  const loggedInSeller = JSON.parse(localStorage.getItem("loginSeller"));
+
+  const products = sellerProducts(loggedInSeller.email);
 
   return (
     <div className="mt-5">
-      <h4 className="mb-3">Products</h4>
+      <h4 className="mb-3">Your Products ({products.length})</h4>
 
       <Table striped bordered hover>
         <thead>
@@ -31,8 +37,9 @@ const DashboardProductsComponent = () => {
               <td>GHS {product.sellingPrice}</td>
               <td>{product.qtyInStock}</td>
               <td>
-                {/* <EditProductComponent product={product} />
-              <DeleteProductComponent productId={product.id} /> */}
+                <EditProductDashboardComponent product={product} />
+
+                <DeleteProductDashboardComponent productId={product.id} />
               </td>
             </tr>
           ))}
@@ -42,4 +49,4 @@ const DashboardProductsComponent = () => {
   );
 };
 
-export default DashboardProductsComponent;
+export default ProductsDashboardComponent;

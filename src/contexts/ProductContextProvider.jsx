@@ -12,7 +12,33 @@ const ProductContextProvider = ({ children }) => {
 
   const addProduct = (newProduct) => {
     // Array destructing, copy what was in the products and add the new product to it.
-    setProducts([...products, newProduct]);
+    setProducts([newProduct, ...products]);
+  };
+
+  const editProduct = (productId, editedProduct) => {
+    const filteredProducts = products.filter(
+      (product) => product.id !== productId
+    );
+
+    // Array destructing, copy what was in the products and add the new product to it.
+    setProducts([editedProduct, ...filteredProducts]);
+  };
+
+  const deleteProduct = (productId) => {
+    const filteredProducts = products.filter(
+      (product) => product.id !== productId
+    );
+
+    // Array destructing, copy what was in the products .
+    setProducts([...filteredProducts]);
+  };
+
+  const sellerProducts = (sellerEmail) => {
+    const filteredProducts = products.filter(
+      (product) => product.seller === sellerEmail
+    );
+
+    return filteredProducts;
   };
 
   useEffect(() => {
@@ -21,7 +47,15 @@ const ProductContextProvider = ({ children }) => {
 
   return (
     // Provide the product information to other components in the application
-    <ProductContext.Provider value={{ products, addProduct }}>
+    <ProductContext.Provider
+      value={{
+        products,
+        addProduct,
+        editProduct,
+        deleteProduct,
+        sellerProducts,
+      }}
+    >
       {children}
     </ProductContext.Provider>
   );
