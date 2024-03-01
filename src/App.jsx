@@ -18,14 +18,14 @@ import FooterComponent from "./components/FooterComponent";
 function App() {
   return (
     <>
-      <NavbarComponent />
+      {/* <NavbarComponent /> */}
       {/* <FooterComponent/> */}
       <ToastContainer />
 
       {/* This is to define or tell us all the routes we have on our website */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ProductsPage />} />
+          <Route path="/" element={<HomePage />} />
           {/* If someone clicks on the products, it will show the Products Page */}
           {/* <Route path="/products" element={<ProductsPage />} /> */}
           <Route path="/login" element={<LoginPage/>} />

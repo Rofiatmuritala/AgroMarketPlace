@@ -9,12 +9,9 @@ export default function () {
                     <h4>Cart</h4>
                     <span>Remove all</span>
                 </div>
-
                 <div className="product-row">
                     <img src="" alt="" />
-                    
                 </div>
-
             </section>
         </>
     );
